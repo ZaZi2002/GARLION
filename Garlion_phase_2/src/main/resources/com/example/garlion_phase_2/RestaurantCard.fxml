@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="restaurantCardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1000.0" style="-fx-background-color: #f2e9d2; -fx-border-color: #9b8159;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.garlion_phase_2.restaurantCardController">
+   <children>
+      <ImageView fx:id="restaurantImage" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@Burger_King_logo_(1999).svg.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="restaurantName" layoutX="243.0" layoutY="73.0" text="BurgerKing" textFill="#9b8159" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="92.0" text="Rating :" textFill="#9b8159" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Gabriola" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="restaurantRating" layoutX="659.0" layoutY="58.0" prefHeight="71.0" prefWidth="43.0" text="4.3" textFill="#9d5a8f" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="148.0" layoutX="764.0" layoutY="27.0" onMouseClicked="#observe" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="72.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="72.0">
+         <image>
+            <Image url="@Observe.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

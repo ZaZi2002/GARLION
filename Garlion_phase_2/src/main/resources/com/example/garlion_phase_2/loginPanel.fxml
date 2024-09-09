@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1000.0" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.garlion_phase_2.LoginPanelController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0" layoutX="16.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@back%20ground.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="800.0" width="1000.0" />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="259.0" fitWidth="229.0" layoutX="374.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="411.1687469482422" AnchorPane.topAnchor="32.0">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D width="375.0" />
+         </viewport>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="222.0" layoutX="651.0" layoutY="661.0" onMouseClicked="#checkSignUp" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="651.0" AnchorPane.rightAnchor="182.00682067871094" AnchorPane.topAnchor="661.0">
+         <image>
+            <Image url="@Sign%20up.png" />
+         </image>
+         <viewport>
+            <Rectangle2D width="180.0" />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="222.0" layoutX="161.0" layoutY="661.0" onMouseClicked="#checkSignIn" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="671.7910919189453" AnchorPane.topAnchor="656.0">
+         <image>
+            <Image url="@Sign%20in.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="signUpPassword" layoutX="635.0" layoutY="429.0" opacity="0.3" prefHeight="41.0" prefWidth="279.0" style="-fx-background-color: #9d5a8f;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </PasswordField>
+      <Line endX="6.35467529296875" endY="390.92340087890625" layoutX="471.0" layoutY="355.0" startX="6.354644775390625" startY="-18.1256103515625" stroke="#9d5a8f" />
+      <Label layoutX="522.0" layoutY="434.0" text="Password" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="367.0" text="Name" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="signInPassword" layoutX="151.0" layoutY="429.0" opacity="0.3" prefHeight="41.0" prefWidth="279.0" style="-fx-background-color: #9d5a8f;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="38.0" layoutY="434.0" text="Password" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="367.0" text="Name" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="519.0" layoutY="504.0" text="What is your favorite animal?" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="840.0" layoutY="578.0" mnemonicParsing="false" selected="true" text="Admin" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="signUpType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="712.0" layoutY="578.0" mnemonicParsing="false" text="User" textFill="#9d5a8f" toggleGroup="$signUpType">
+         <font>
+            <Font name="Mistral" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="550.0" layoutY="578.0" mnemonicParsing="false" text="Delivery" textFill="#9d5a8f" toggleGroup="$signUpType">
+         <font>
+            <Font name="Mistral" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="346.0" layoutY="494.0" mnemonicParsing="false" selected="true" text="Admin" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="signInType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="218.0" layoutY="494.0" mnemonicParsing="false" text="User" textFill="#9d5a8f" toggleGroup="$signInType">
+         <font>
+            <Font name="Mistral" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="56.0" layoutY="494.0" mnemonicParsing="false" text="Delivery" textFill="#9d5a8f" toggleGroup="$signInType">
+         <font>
+            <Font name="Mistral" size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="110.0" layoutY="544.0" text="86 + 43 =" textFill="#9d5a8f">
+         <font>
+            <Font name="Mistral" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signInName" layoutX="150.0" layoutY="362.0" opacity="0.3" prefHeight="41.0" prefWidth="279.0" style="-fx-background-color: #9d5a8f;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpName" layoutX="635.0" layoutY="362.0" opacity="0.3" prefHeight="41.0" prefWidth="279.0" style="-fx-background-color: #9d5a8f;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="securityWord" layoutX="786.0" layoutY="497.0" opacity="0.3" prefHeight="43.0" prefWidth="179.0" style="-fx-background-color: #9d5a8f;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="logInQ" layoutX="228.0" layoutY="539.0" opacity="0.3" prefHeight="43.0" prefWidth="172.0" style="-fx-background-color: #9d5a8f;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label fx:id="signInMessage" layoutX="151.0" layoutY="309.0" prefHeight="27.0" prefWidth="279.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="signUpMessage" layoutX="624.0" layoutY="309.0" prefHeight="27.0" prefWidth="324.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="signUpExplain" layoutX="635.0" layoutY="207.0" lineSpacing="1.0" prefHeight="84.0" prefWidth="279.0" textAlignment="CENTER" textFill="#9d5a8f" wrapText="true" />
+      <Label layoutX="163.0" layoutY="599.0" onMouseClicked="#forgotPassword" text="Password recovery!" textFill="BLUE" underline="true">
+         <font>
+            <Font name="Mistral" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

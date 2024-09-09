@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.garlion_phase_2.addFoodPanelController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #f2e9d2;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="122.0" layoutY="14.0" text="Add Food" textFill="#9d5a8f" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="89.0">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="53.0" text="Name" textFill="#9b8159" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="53.0">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="foodName" layoutX="87.0" layoutY="57.0" prefHeight="25.0" prefWidth="172.0" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="57.0" />
+            <Label layoutX="27.0" layoutY="103.0" text="Price" textFill="#9b8159">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="price" layoutX="87.0" layoutY="105.0" prefHeight="25.0" prefWidth="172.0" />
+            <Label layoutX="17.0" layoutY="152.0" text="Discount" textFill="#9b8159" AnchorPane.leftAnchor="17.0">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="discount" layoutX="87.0" layoutY="154.0" prefHeight="25.0" prefWidth="172.0" />
+            <ImageView fitHeight="38.0" fitWidth="172.0" layoutX="95.0" layoutY="237.0" onMouseClicked="#checkAdd" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="95.26530456542969" AnchorPane.topAnchor="237.0">
+               <image>
+                  <Image url="@Add%20food.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="97.0" layoutY="191.0" mnemonicParsing="false" onMouseClicked="#addPhoto" style="-fx-background-color: #f0bce5;" text="Choose Photo" textFill="#9b8159" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="175.0">
+               <font>
+                  <Font name="Gabriola" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="AddMessage" layoutX="141.0" layoutY="212.0" prefHeight="17.0" prefWidth="140.0" textFill="RED" />
+            <RadioButton fx:id="activeOrnot" layoutX="161.0" layoutY="183.0" mnemonicParsing="false" selected="true" text="Active" textFill="#724804">
+               <font>
+                  <Font name="Gabriola" size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
